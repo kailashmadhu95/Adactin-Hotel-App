@@ -109,7 +109,7 @@ test('Verify the booking details', async({page})=>{
     await b.expiryYear()
     await b.cvvNumb()
     await b.bookBtn()
-    await page.waitForTimeout(3000)
+    // await page.waitForTimeout(3000)
     // await b.itinearyBtn()
     await b.logOut()
 })
