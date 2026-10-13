@@ -1,8 +1,29 @@
 { "data" : {
+       
+    "un" : "kailash.madhu28@gmail.com",
+    "up" : "Kailash@12345",
+    "incorrect_un" : "kailash@gmail.com",
+    "incorrect_up" : "Kailash123",
 
-    "fn" : "Knight",
-    "ln" : "ride",
-    "ba" : "perungudi chennai",
-    "cn" : "1034 1924 9462 6731"
+
+       
+    "user" : "KailashM",
+    "password" : "Kailash@123",
+    "confirm" : "Kailash@123",
+    "full" : "Kailash Madhu",
+    "Email" : "kailash@example.com",
+
+        
+    "fn" : "Kailash",
+    "ln" : "M",
+    "ba" : "1234, 5th Avenue",
+    "cn" : "1234567890123456",
+    "cvv" : "123",
+    "correct_checkIN_date" : "12/10/2026",
+    "correct_checkOUT_date" : "14/10/2026",
+    "incorrect_checkIN_date" : "01/09/2026",
+    "incorrect_checkOUT_date" : "03/09/2026"
+
+
 }
 }

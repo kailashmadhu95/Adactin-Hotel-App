@@ -1,4 +1,4 @@
-export class SignIn {
+class SignIn {
     constructor(page) {
         this.url = page
         this.newUser = page.locator('//a[text()="New User Register Here"]')
@@ -59,3 +59,4 @@ export class SignIn {
     }
 
 } 
+module.exports = { SignIn }

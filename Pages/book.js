@@ -1,4 +1,4 @@
-export class booking {
+ class booking {
     constructor (page){
         this.oname = page.locator('#first_name')
         this.ename = page.locator('#last_name')
@@ -8,7 +8,7 @@ export class booking {
         this.exmonth = page.locator('#cc_exp_month')
         this.exyear = page.locator('#cc_exp_year')
         this.cvnumb = page.locator('#cc_cvv')
-        this.book = page.locator('#book_now')
+        this.booked = page.locator('#book_now')
         this.itineary =page.locator('#my_itinerary')
         this.signout = page.locator('[id="logout"]')
 
@@ -35,11 +35,11 @@ export class booking {
     async expiryYear(){
         await this.exyear.selectOption({value:"2027"})
     }
-    async cvvNumb(){
-        await this.cvnumb.fill('124')
+    async cvvNumb(cvv){
+        await this.cvnumb.fill(cvv)
     }
     async bookBtn(){
-        await this.book.click()
+        await this.booked.click()
     }
     async itinearyBtn(){
         await this.itineary.click()
@@ -49,3 +49,4 @@ export class booking {
     }
 
 }
+module.exports = { booking }

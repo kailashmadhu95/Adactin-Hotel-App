@@ -1,4 +1,4 @@
-export class Confirmation {
+ class Confirmation {
     constructor(page) {
         this.button = page.locator('#radiobutton_0')
         this.continue = page.locator('#continue')
@@ -12,3 +12,4 @@ export class Confirmation {
         await this.continue.click()
     }
 }
+module.exports = { Confirmation }

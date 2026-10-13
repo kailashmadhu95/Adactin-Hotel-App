@@ -1,4 +1,4 @@
-export class searchHotel {
+class searchHotel {
     constructor(page) {
         this.loc = page.locator('#location')
         this.hot = page.locator('#hotels')
@@ -22,11 +22,17 @@ export class searchHotel {
     async rooms () {
         await this.noOfRoom.selectOption({value:"6"})
     }
-    async checkInDate () {
-        await this.checkIn.fill('04/10/2026')
+    async CRTcheckInDate (correct_checkIN_date) {
+        await this.checkIn.fill(correct_checkIN_date)
     }
-    async checkOutDate () {
-        await this.checkOut.fill('07/10/2026')
+    async CRTcheckOutDate (correct_checkOUT_date) {
+        await this.checkOut.fill(correct_checkOUT_date)
+    }
+    async InCRTcheckInDate (incorrect_checkIN_date) {
+        await this.checkIn.fill(incorrect_checkIN_date)
+    } 
+    async InCRTcheckOutDate (incorrect_checkOUT_date) {
+        await this.checkOut.fill(incorrect_checkOUT_date)
     }
     async adultsPerRoom () {
         await this.adultRoom.selectOption({value:"2"})
@@ -39,3 +45,4 @@ export class searchHotel {
     }  
 
 }
+module.exports = { searchHotel }
