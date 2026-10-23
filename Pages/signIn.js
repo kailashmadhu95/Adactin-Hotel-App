@@ -59,4 +59,4 @@ class SignIn {
     }
 
 } 
-module.exports = { SignIn }
+module.exports =  SignIn 

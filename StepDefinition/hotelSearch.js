@@ -1,10 +1,11 @@
 const {Given, When, Then} = require("@cucumber/cucumber");
+const { booking } = require("../Pages/book");
 
 Given('User logins with the correct credential', async function () {
     lo = new SignIn(this.page)
     l = new Login(this.page)
     sh = new searchHotel(this.page)
-    await lo.URL()
+    book = new booking(this.page)
     await l.userCredentials(data.un)
     await l.userPassword(data.up)
     await l.loginBtn()
@@ -49,7 +50,7 @@ Given('User logins with the valid credential', async function () {
     lo = new SignIn(this.page)
     l = new Login(this.page)
     sh = new searchHotel(this.page)
-    await lo.URL()
+    book = new booking(this.page)
     await l.userCredentials(data.un)
     await l.userPassword(data.up)
     await l.loginBtn()
@@ -93,7 +94,7 @@ Given('User login with the correct credentials', async function () {
     lo = new SignIn(this.page)
     l = new Login(this.page)
     sh = new searchHotel(this.page)
-    await lo.URL()
+     book = new booking(this.page)
     await l.userCredentials(data.un)
     await l.userPassword(data.up)
     await l.loginBtn()

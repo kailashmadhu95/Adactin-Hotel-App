@@ -26,21 +26,35 @@
     async cardNo(cn){
         await this.card.fill(cn)
     }
+    async incrtCardNo(less_cn){
+        await this.card.fill(less_cn)
+    }
     async cardType(){
         await this.ctype.selectOption({value:"VISA"})
     }
     async expiryMonth(){
         await this.exmonth.selectOption({value:"9"})
     }
+    async expMonth(exp_Date){
+        await this.exmonth.selectOption(exp_Date)
+    }
+
     async expiryYear(){
         await this.exyear.selectOption({value:"2027"})
     }
+
+    async expYear(exp_Year){
+        await this.exyear.selectOption(exp_Year)
+    }
+
     async cvvNumb(cvv){
         await this.cvnumb.fill(cvv)
     }
+
     async bookBtn(){
         await this.booked.click()
     }
+    
     async itinearyBtn(){
         await this.itineary.click()
     }
